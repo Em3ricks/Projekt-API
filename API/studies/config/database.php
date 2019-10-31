@@ -1,9 +1,9 @@
 <?php // Klass för hantering av databasanslutning
 class Database { // Specifikation av databasanslutning
-    private $host = "localhost"; 
-    private $db_name = "joem1800";
-    private $username = "root";
-    private $password = "";
+    public $host = "studentmysql.miun.se";
+    public $db_name = "joem1800";
+    public $username = "joem1800";
+    public $password = "g8wmt1wr";
     public $conn; 
 
     public function getConnection() { // Funktion för att hämta databasanslutning

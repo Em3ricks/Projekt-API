@@ -13,7 +13,7 @@ $conn = $db_connection->getConnection();
 $data = json_decode(file_get_contents("php://input")); // GET DATA FORM REQUEST
 $msg['message'] = '';//CREATE MESSAGE ARRAY AND SET EMPTY
 
-if( // Kontroll om värden deklarerats
+if( // CHECK IF RECEIVED DATA FROM THE REQUEST
 isset($data->kolumn_1) && 
 isset($data->kolumn_2) && 
 isset($data->kolumn_3)){
